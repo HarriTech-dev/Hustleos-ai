@@ -44,7 +44,7 @@ export default async function CustomersPage() {
               <div>Total Spent</div>
               <div>Invoices</div>
             </div>
-            {customers.map((customer) => (
+            {customers.map((customer: any) => (
               <div key={customer.id} className="grid grid-cols-6 gap-4 p-4 text-sm border-b last:border-0">
                 <div>{customer.name}</div>
                 <div>{customer.email || "—"}</div>
