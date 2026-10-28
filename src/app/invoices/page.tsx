@@ -43,7 +43,7 @@ export default async function InvoicesPage() {
               <div>Created</div>
               <div>Actions</div>
             </div>
-            {invoices.map((invoice) => (
+            {invoices.map((invoice: any) => (
               <div key={invoice.id} className="grid grid-cols-6 gap-4 p-4 text-sm border-b last:border-0">
                 <div>{invoice.customer_name}</div>
                 <div>
