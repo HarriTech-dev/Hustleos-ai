@@ -44,7 +44,7 @@ export default async function InventoryPage() {
               <div>Category</div>
               <div>Status</div>
             </div>
-            {inventory.map((item) => (
+            {inventory.map((item: any) => (
               <div key={item.id} className="grid grid-cols-6 gap-4 p-4 text-sm border-b last:border-0">
                 <div>{item.name}</div>
                 <div>{item.sku || "—"}</div>
